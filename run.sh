@@ -40,3 +40,4 @@ echo "You will now need to enable port forwarding on your router"
 echo "Enable port forwarding for 19132 UDP"
 echo "Then share your public ip address:"
 curl ipinfo.io/ip
+echo ""
