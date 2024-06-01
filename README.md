@@ -1,6 +1,4 @@
-Certainly! Here's a `README.md` file that explains your public Minecraft server, how to run the script, and provides detailed instructions and explanations.
 
-```markdown
 # MCJAF Public Minecraft Server
 
 Welcome to the MCJAF Public Minecraft Server! This repository provides a convenient script to set up and run our Minecraft server using Docker. Follow the instructions below to get started.
