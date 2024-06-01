@@ -8,7 +8,7 @@ Welcome to the MCJAF Public Minecraft Server! This repository provides a conveni
 To run the setup script, simply use the following command in your terminal:
 
 ```sh
-curl -fsSL https://get.mcjaf.uk | sh
+curl -fsSL https://raw.githubusercontent.com/AhmadAlJaf/public-mc/main/run.sh | sh
 ```
 
 ### What the Script Does
