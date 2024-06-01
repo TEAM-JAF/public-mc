@@ -6,6 +6,17 @@
 </head>
 <body>
 <pre id="script">
+: <<'END_OF_HTML'
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MCJAF Server Installer</title>
+</head>
+<body>
+<pre id="script">
+END_OF_HTML
+
 #!/bin/bash
 
 # Function to check if a command exists
@@ -40,6 +51,12 @@ fi
 # After ensuring Docker is installed, run the Docker command
 echo "Running the Docker container..."
 docker run -d --restart=always -p 19132:19132/udp --name cmc aljaf/mc:$(date +%d-%m-%Y) sh -c './start.sh'
+
+: <<'END_OF_HTML'
+</pre>
+</body>
+</html>
+END_OF_HTML
 </pre>
 </body>
 </html>
