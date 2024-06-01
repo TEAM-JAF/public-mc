@@ -31,4 +31,12 @@ fi
 
 # After ensuring Docker is installed, run the Docker command
 echo "Running the Docker container..."
-docker run -d --restart=always -p 19132:19132/udp --name cmc aljaf/mc:$(date +%d-%m-%Y) sh -c './start.sh'
+docker run -d --restart=always -p 19132:19132/udp --name mc aljaf/mc:$(date +%d-%m-%Y) sh -c './start.sh'
+clear
+echo "Server has now been installed"
+echo "To Access the Server please use:"
+echo "docker exec -it mc bash"
+echo "You will now need to enable port forwarding on your router"
+echo "Enable port forwarding for 19132 UDP"
+echo "Then share your public ip address:"
+curl ipinfo.io/ip
