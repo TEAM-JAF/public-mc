@@ -47,23 +47,13 @@ curl -s https://registry.hub.docker.com/v1/repositories/aljaf/mc/tags | jq -r '.
 
 This command uses `curl` to fetch the tags from Docker Hub and `jq` to parse and list the tag names. Ensure you have `jq` installed on your system to run this command.
 
-### Installing `jq`
+### Installing `curl`
 
-If you don't have `jq` installed, you can install it using the following commands:
+If you don't have `curl` installed, you can install it using the following commands:
 
 - **Debian/Ubuntu**:
   ```sh
-  sudo apt-get install jq
-  ```
-
-- **CentOS/RHEL**:
-  ```sh
-  sudo yum install jq
-  ```
-
-- **macOS**:
-  ```sh
-  brew install jq
+  sudo apt update && sudo apt install curl -y
   ```
 
 ## Conclusion
