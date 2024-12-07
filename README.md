@@ -1,13 +1,26 @@
 # MCJAF Public Minecraft Server
 
-Welcome to the MCJAF Public Minecraft Server! This repository provides a convenient script to set up and run our Minecraft server using Docker. Follow the instructions below to get started, whether you're using Windows, macOS, or Linux.
+Welcome to the MCJAF Public Minecraft Server! This repository provides a convenient script to set up and run our Minecraft server using Docker. Follow the instructions below to get started, whether you're using Windows or Linux.
 
 ## Prerequisites
 
-- **Linux or macOS**: Ensure you have a terminal with `curl` installed.
+- **Linux**: Ensure you have a terminal with `curl` installed.
 - **Windows**: You need Windows Subsystem for Linux (WSL) to run the script. Follow the instructions below to set it up.
-- **macOS**: You will need to install docker on your own.  Please refer to dockers guide [click here](https://docs.docker.com/desktop/setup/install/mac-install/)
+- **Experts**: Install docker and find the image on [here](https://hub.docker.com/u/aljaf)  (Creative uses port 19130 and everthing else is default) 
 ---
+
+## Experts
+
+After you installed docker and found the image. use this as an example
+```bash
+docker run -d --restart=always -p 19130:19130/udp -name cmc aljaf/cmc sh -c './start.sh'
+```
+for terraria you do /tcp instead of udp.
+
+If you want a custom date then do it like this
+```bash
+docker run -d --restart=always -p 19132:19132/udp -name mc aljaf/mc:07-12-2024 sh -c './start.sh'
+```
 
 ## Setting Up WSL on Windows
 
