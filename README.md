@@ -15,7 +15,7 @@ After you installed docker and found the image. use this as an example
 ```bash
 docker run -d --restart=always -p 19130:19130/udp -name cmc aljaf/cmc sh -c './start.sh'
 ```
-for terraria you do /tcp instead of udp.
+for terraria you do 7777/tcp instead of udp.
 
 If you want a custom date then do it like this
 ```bash
